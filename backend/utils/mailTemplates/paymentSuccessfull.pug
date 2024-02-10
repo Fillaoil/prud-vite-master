@@ -1,0 +1,28 @@
+extends baseEmail 
+
+block content 
+                            
+  h3 Dobrý deň #{user},
+  
+  h1 Vaša objednávka je zaplatená!
+
+  h2 #{products}
+  h2 Platca: #{paidByWhom}
+
+  h2 #{firstName}
+  h2 #{address}
+  h2 Spôsob platby: #{paymentMethod}
+  h2 Status: #{paid}
+  h2 Poštovné: €#{shippingPrice}
+  //- h2 Tax: €#{taxPrice}
+  h2 Celkom: €#{totalPrice}
+  h2 Číslo objednávky: #{orderNumber}
+  h2 Poznámka: #{note}
+
+
+  h2 Ďakujeme za Váš nákup!
+
+  h3 Prúd
+
+  
+  
