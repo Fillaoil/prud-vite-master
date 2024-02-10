@@ -69,12 +69,12 @@ const ContactScreen = () => {
         <Form onSubmit={submitHandler}>
           <Form.Group controlId='name'>
             <Form.Label>
-              Meno a priezvisko<sup>*</sup>
+              Jméno a příjmení<sup>*</sup>
             </Form.Label>
             <Form.Control
               required
               type='name'
-              placeholder='Meno a priezvisko'
+              placeholder='Jméno a příjmení'
               value={name}
               onChange={(e) => setName(e.target.value)}
             ></Form.Control>
